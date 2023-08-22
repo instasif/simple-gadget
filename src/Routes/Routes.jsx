@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main";
 import Home from './../Pages/Home/Home';
+import ProductsDetails from "../Pages/ProductDetails/ProductsDetails";
 
 export const router = createBrowserRouter([
     {
@@ -12,9 +13,8 @@ export const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: "products/:id",
-                loader: ({params}) => fetch(product.json)
-
+                path: "/products/:id",
+                element: <ProductsDetails />
             } 
         ]
     }

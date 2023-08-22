@@ -22,11 +22,11 @@ const Navbar = () => {
     return (
         <>
         <UpNav />
-        <nav className="relative md:h-20 bg-gray-950 shadow ">
+        <nav className="relative md:h-20  bg-gray-950 shadow ">
       <div className="container px-6 py-3 mx-auto md:flex ">
         <div className="flex items-center justify-between">
         <Link to="#">
-                    <img className="w-auto h-[100px] lg:h-[150px] lg:mt-[-40px]" src={logo} alt=""/>
+                    <img className="w-auto h-[120px] lg:h-[150px] lg:mt-[-40px]" src={logo} alt=""/>
                 </Link>
 
           <div className="flex lg:hidden">

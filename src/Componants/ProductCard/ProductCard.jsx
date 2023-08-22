@@ -7,7 +7,7 @@ const ProductCard = ({product}) => {
         <Link href="#" className="group relative block overflow-hidden">
   <img
     src={img}
-    alt=""
+    alt="product image"
     className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
   />
 
@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
 
     <p className="mt-1.5 text-sm text-gray-700"><span className="text-xl font-bold">৳</span>{price}</p>
 
-    <Link className="mt-4">
+    <Link to={`/products/${product.id}`} className="mt-4">
       <button
         className="block w-full rounded bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105"
       >
